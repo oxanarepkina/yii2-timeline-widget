@@ -8,9 +8,13 @@ use yii\base\Model;
 class LogModel extends Model
 {
 
-    /**
-     * @inheritdoc
-     */
+    public $action;
+    public $title;
+    public $body;
+    public $log_date;
+    public $macros;
+    public $_id;
+
     public function rules()
     {
         return [
@@ -20,9 +24,7 @@ class LogModel extends Model
             ['macros', 'safe']
         ];
     }
-    /**
-     * @inheritdoc
-     */
+
     public function attributes()
     {
         return [
@@ -35,9 +37,6 @@ class LogModel extends Model
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return [
@@ -49,5 +48,4 @@ class LogModel extends Model
             'log_date' => 'Date',
         ];
     }
-
 }
