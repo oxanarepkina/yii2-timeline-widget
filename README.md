@@ -4,7 +4,10 @@ Yii2 TimeLine Widget
 [![Latest Version](https://img.shields.io/github/tag/mice-tm/yii2-timeline-widget.svg?style=flat-square&label=release)](https://github.com/mice-tm/yii2-timeline-widget/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Dependency Status](https://www.versioneye.com/user/projects/5a2025600fb24f0018f8c517/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a2025600fb24f0018f8c517)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mice-tm/yii2-timeline-widget/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mice-tm/yii2-timeline-widget/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/mice-tm/yii2-timeline-widget/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mice-tm/yii2-timeline-widget/build-status/master)
 [![Total Downloads](https://img.shields.io/packagist/dt/mice-tm/yii2-timeline-widget.svg?style=flat-square)](https://packagist.org/packages/mice-tm/yii2-timeline-widget)
+
 
 Installation
 ------------
