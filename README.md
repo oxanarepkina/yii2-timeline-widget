@@ -2,9 +2,9 @@ Yii2 TimeLine Widget
 ====================
 
 [![Latest Version](https://img.shields.io/github/tag/mice-tm/yii2-timeline-widget.svg?style=flat-square&label=release)](https://github.com/mice-tm/yii2-timeline-widget/releases)
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Dependency Status](https://www.versioneye.com/user/projects/5a2025600fb24f0018f8c517/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a2025600fb24f0018f8c517)
-[![Total Downloads](https://img.shields.io/packagist/dt/vova07/yii2-imperavi-widget.svg?style=flat-square)](https://packagist.org/packages/vova07/yii2-imperavi-widget)
+[![Total Downloads](https://img.shields.io/packagist/dt/mice-tm/yii2-timeline-widget.svg?style=flat-square)](https://packagist.org/packages/mice-tm/yii2-timeline-widget)
 
 Installation
 ------------
@@ -28,7 +28,10 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-Timeline widget expects array of LogModel-like models (micetm\timeline\LogModel).
+Timeline widget expects array of LogModel-like models (micetm\timeline\LogModel) in `items`-param.
+Where `title` and `body` can contain macros strings in yii macros-format `{here-is-macros}`.
+With `eventIcons`-param you can extend or reassign icons for actions. 
+ 
 ```php
 class LogModel extends Model
 {
