@@ -53,10 +53,14 @@ class Timeline extends Widget
             $timelineItem[] = $this->construnctTime($model->log_date);
 
             if ($model->title) {
-                $timelineItem[] = $this->constructHeader($model->title, $model->macros);
+                $timelineItem[] = $this->constructHeader($model->title, is_array($model->macros)
+                    ? $model->macros
+                    : json_decode($model->macros, true));
             }
             if ($model->body) {
-                $timelineItem[] = $this->constructBody($model->body, $model->macros);
+                $timelineItem[] = $this->constructBody($model->body, is_array($model->macros)
+                    ? $model->macros
+                    : json_decode($model->macros, true));
             }
             $nodes[] = Html::tag('div', implode("\n", $timelineItem), ['class' => 'timeline-item']);
             $lis[] = Html::tag('li', implode("\n", $nodes));
